@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Phone, Mail, MapPin, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, []);
+
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       {/* Hero Section with Breadcrumb */}

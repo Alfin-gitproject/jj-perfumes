@@ -120,4 +120,12 @@
     overflow-x: auto;
     white-space: pre;
   }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
 }
