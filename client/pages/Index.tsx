@@ -749,7 +749,7 @@ export default function Index() {
             <span className="text-black">Process</span>
           </motion.h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {[
               {
                 title: "Bespoke Fragrance Development",
@@ -779,43 +779,24 @@ export default function Index() {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-                className="flex flex-col items-center"
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group"
               >
-                {/* Pill-shaped oval container with content inside */}
-                <div
-                  className="bg-[#F2F2F2] mb-4 sm:mb-6 flex flex-col items-center justify-center p-3 sm:p-4 lg:p-6"
-                  style={{
-                    width: "160px",
-                    height: "220px",
-                    borderRadius: "100px",
-                  }}
-                >
-                  {/* Title + Description inside the card */}
-                  <div className="text-center px-2">
-                    <h3
-                      className="font-bold text-[#1E1E1E] mb-2"
-                      style={{
-                        fontSize: "16px",
-                        lineHeight: "16px",
-                        letterSpacing: "0.3px",
-                      }}
-                    >
+                {/* Modern card container */}
+                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 h-full border border-gray-100 group-hover:border-gray-200">
+                  {/* Icon placeholder */}
+                 
+                  
+                  {/* Content */}
+                  <div className="space-y-3 text-center">
+                    <h3 className="font-bold text-gray-900 text-xl leading-tight text-center">
                       {item.title}
                     </h3>
-                    <p
-                      className="text-[#1E1E1E]"
-                      style={{
-                        fontSize: "14px",
-                        lineHeight: "14px",
-                        letterSpacing: "0.2px",
-                        opacity: 0.7,
-                      }}
-                    >
+                    <p className="text-gray-600 text-base leading-relaxed text-center">
                       {item.description}
                     </p>
                   </div>
