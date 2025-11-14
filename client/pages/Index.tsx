@@ -790,8 +790,8 @@ export default function Index() {
                 <div
                   className="bg-[#F2F2F2] mb-4 sm:mb-6 flex flex-col items-center justify-center p-3 sm:p-4 lg:p-6"
                   style={{
-                    width: "140px",
-                    height: "190px",
+                    width: "160px",
+                    height: "220px",
                     borderRadius: "100px",
                   }}
                 >
@@ -800,9 +800,9 @@ export default function Index() {
                     <h3
                       className="font-bold text-[#1E1E1E] mb-2"
                       style={{
-                        fontSize: "11px",
-                        lineHeight: "14px",
-                        letterSpacing: "0.5px",
+                        fontSize: "16px",
+                        lineHeight: "16px",
+                        letterSpacing: "0.3px",
                       }}
                     >
                       {item.title}
@@ -810,9 +810,9 @@ export default function Index() {
                     <p
                       className="text-[#1E1E1E]"
                       style={{
-                        fontSize: "9px",
-                        lineHeight: "12px",
-                        letterSpacing: "0.4px",
+                        fontSize: "14px",
+                        lineHeight: "14px",
+                        letterSpacing: "0.2px",
                         opacity: 0.7,
                       }}
                     >
